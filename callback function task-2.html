@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>callback function</title>
+</head>
+<body>
+<script>
+function operation(value1,value2,callback){
+const result=value1/value2;
+callback(result);
+}
+function divide(result){
+console.log("The Divide of two numbers:"+ result);
+}
+operation(15,5,divide);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Callback function</title>
+</head>
+<body>
+<script>
+const orderPizza = (pizzaType, callback) => {
+  console.log(`Robin orders a ${pizzaType} pizza.`);
+  setTimeout(() => {
+    console.log("The pizza is ready!");
+    callback();
+  }, 3000);
+};
+const notifyRobin = () => {
+  console.log("Robin gets a notification that his pizza is on the way!");
+};
+orderPizza("cheese barbeque",notifyRobin);
+</script>
+</body>
+</html>

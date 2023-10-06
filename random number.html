@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Random Of a Number Using Function Expression</title>
+</head>
+<body>
+<script>
+let random=function(){
+const a=Math.floor(Math.random()*10);
+const  b=parseInt(prompt("Guess the number between 1 to 10"));
+if(b===a){
+return(`Good work`);
+}
+else{
+return(`Not matched`);
+}
+}
+console.log(random());
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Palindrome  Using Arrow Function</title>
+</head>
+<body>
+<script>
+ let palindrome=()=>{
+ let n=parseInt(prompt("Enter the number:"));
+let temp=n;
+let rev=0;
+    while(n>0){
+        let rem=n%10;
+        n=~~(n/10);  
+        rev=rev*10+rem;
+    }
+    if(temp==rev){
+       console.log(`It is a Palindrome`);
+    }
+    else{
+        console.log(`It is not a Palindrome`);
+    }
+ }
+ palindrome();
+</script>
+</body>
+</html>

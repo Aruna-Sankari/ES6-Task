@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>array using callback function</title>
+<body>
+<script>
+var numbers = [1,2,3,4,5];
+let a=(numbers,iteration)=>{
+iteration(numbers)
+}
+function iteration(num){
+num.forEach(e=>{
+console.log(e);
+});
+}
+a(numbers,iteration);
+</script>
+</body>
+</html>

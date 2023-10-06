@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Reverse A Number Using Arrow Function</title>
+</head>
+<body>
+<script>
+let reverse=(n)=>{
+let rev=0;
+while(n>0){
+let rem=n%10;
+rev=(rev*10)+rem;
+n=~~(n/10);
+}
+return rev;
+}
+console.log(reverse(198));
+</script>
+</body>
+</html>

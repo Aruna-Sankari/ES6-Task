@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>callback function</title>
+</head>
+<body>
+<script>
+function operation(value1,value2,callback){
+const total=value1+value2;
+callback(total);
+}
+function sum(total){
+console.log("The Sum is:"+ total);
+}
+operation(5,10,sum);
+</script>
+</body>
+</html>
